@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusViewOwner">
+            <connections>
+                <outlet property="avatarImageView" destination="aUH-7n-6g2" id="6co-eA-yiy"/>
+                <outlet property="contentHeightConstraint" destination="cxO-3w-0zO" id="Hbr-nK-VXE"/>
+                <outlet property="contentImageView" destination="W1z-MU-xwH" id="jFj-dm-d8s"/>
+                <outlet property="contentLabel" destination="JFS-6E-YSG" id="CpI-7y-hzH"/>
+                <outlet property="nameLabel" destination="e06-pw-3Ys" id="gYL-CQ-yAs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="VNJ-tQ-2gp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUH-7n-6g2" userLabel="Avatar">
+                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5Vm-uR-WIf"/>
+                        <constraint firstAttribute="width" constant="40" id="Oeg-Cb-x4V"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e06-pw-3Ys" userLabel="Name">
+                    <rect key="frame" x="56" y="18" width="45" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-MU-xwH">
+                    <rect key="frame" x="0.0" y="56" width="411" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="wrG-ir-USE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFS-6E-YSG">
+                    <rect key="frame" x="8" y="304" width="395" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="cxO-3w-0zO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JFS-6E-YSG" secondAttribute="bottom" constant="20" id="0fG-1u-9Pm"/>
+                <constraint firstItem="JFS-6E-YSG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2Gu-u2-BfT"/>
+                <constraint firstAttribute="trailing" secondItem="W1z-MU-xwH" secondAttribute="trailing" id="9Mk-RP-agd"/>
+                <constraint firstItem="aUH-7n-6g2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Axr-4v-aCI"/>
+                <constraint firstItem="e06-pw-3Ys" firstAttribute="leading" secondItem="aUH-7n-6g2" secondAttribute="trailing" constant="8" id="FWz-Om-h6k"/>
+                <constraint firstItem="JFS-6E-YSG" firstAttribute="top" secondItem="W1z-MU-xwH" secondAttribute="bottom" constant="8" id="JJ6-4g-gIy"/>
+                <constraint firstItem="W1z-MU-xwH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cpu-fc-CkT"/>
+                <constraint firstItem="e06-pw-3Ys" firstAttribute="centerY" secondItem="aUH-7n-6g2" secondAttribute="centerY" id="ezQ-VZ-5yp"/>
+                <constraint firstItem="W1z-MU-xwH" firstAttribute="top" secondItem="aUH-7n-6g2" secondAttribute="bottom" constant="8" id="jSN-Xx-vc1"/>
+                <constraint firstItem="aUH-7n-6g2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="mIY-n3-LRW"/>
+                <constraint firstAttribute="trailing" secondItem="JFS-6E-YSG" secondAttribute="trailing" constant="8" id="qpo-Ta-wUF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-74.5" y="-133"/>
+        </view>
+    </objects>
+</document>
